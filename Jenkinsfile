@@ -1,7 +1,7 @@
 node {
     checkout([
          $class: 'GitSCM',
-         branches: scm.branches,
+         branches: [[name: '*/master']],
          doGenerateSubmoduleConfigurations: scm.doGenerateSubmoduleConfigurations,
          extensions: scm.extensions,
          userRemoteConfigs: scm.userRemoteConfigs
