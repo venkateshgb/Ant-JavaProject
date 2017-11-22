@@ -12,7 +12,11 @@ node {
           checkout scm
        }
 
-      
+      stage('Sonar') {
+                    //add stage sonar
+                    sh 'mvn sonar:sonar'
+                }
+        
 
        stage('mail'){
 
