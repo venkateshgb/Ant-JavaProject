@@ -34,7 +34,7 @@
 		<delete dir="${dist.dir}" />
 	</target>
 
-	<!-- Default, run this -->
+	<!-- Default, run this target -->
 	<target name="main" depends="clean, compile, dist" />
 
 </project>
